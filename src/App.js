@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Registration from './components/Registration'
+import Home from './components/Home'
+import Librarian from './components/LibrarianDashboard'
+import Signup from './components/Signup'
+import Contactus from './components/Contactus'
+// header and footer
+import Footer from './components/Footer'
+import Header from './components/Header'
+import {BrowserRouter as Router, Route} from 'react-router-dom'
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  
+ return (
+   <Router>
+  <div className="App">
+    <Header />
+    <Route path="/signup" component={Signup}></Route>
+   
+    <Route path="/login" component={Registration}></Route>
+     <Route path="/contact" component={Contactus}></Route>
+     <Route path="/Librarian" component={Librarian}></Route>
+     <Route path="/home" component={Home}></Route>
+          
+    <Footer />
+      
+   </div>
+   </Router>
+ )
 }
 
 export default App;
