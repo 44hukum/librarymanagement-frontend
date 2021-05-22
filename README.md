@@ -1,4 +1,4 @@
-![]("./src/assets/img/Capture")
+![]("./src/assets/img/Capture.png")
 
 # Getting Started with Create React App
 
