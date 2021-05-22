@@ -1,7 +1,7 @@
 import React from 'react'
 import "../assets/css/Navigation-with-Search.css"
 import "../assets/css/styles.css"
-
+import {Link} from 'react-router-dom'
 import '../assets/js/bs-init.js'
 
 // images
@@ -65,7 +65,10 @@ function librarian(){
                 </div>
             </div>
             <div className="col-md-12">
-                <h1 style={{'margin-top': "2em"}}>Books</h1><button className="btn btn-success btn-sm" type="button">Add book</button>
+                <h1 style={{'margin-top': "2em"}}>Books</h1>
+                <Link to="/addbook">
+                <button className="btn btn-success btn-sm" type="button">Add book</button>
+                </Link>
                 <div className="table-responsive">
                     <table className="table">
                         <thead>
@@ -82,48 +85,42 @@ function librarian(){
                                 <td>Cell 1</td>
                                 <td>Cell 2</td>
                                 <td>Cell 3</td>
-                                <td>Cell 4</td>
+                                <td><button type="submit">
+                                    delete
+                                    </button></td>
                                 <td>Cell 5</td>
                             </tr>
-                            <tr>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                            </tr>
+                           
                         </tbody>
                     </table>
                 </div>
             </div>
             <div className="col-md-12">
-                <h1 style={{'margin-top': "2em" }}>Users</h1><button className="btn btn-success btn-sm" type="button">Add user</button>
+                <h1 style={{'margin-top': "2em" }}>Users</h1>
+                <Link to="/signup">
+                <button className="btn btn-success btn-sm" type="button">Add user</button>
+
+                </Link>
                 <div className="table-responsive">
                     <table className="table">
                         <thead>
                             <tr>
                                 <th>S.N</th>
                                 <th>Username</th>
-                                <th>Book Name</th>
-                                <th>Status</th>
-                                <th>Returned Date</th>
+                                <th>book borrowed</th>
+                                <th>Action</th>
+                                <th>Fine</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>Cell 1</td>
                                 <td>Cell 2</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
+                                <td>Cell 2</td>
+                                <td><button type="">delete</button></td>
+                               
                             </tr>
-                            <tr>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 3</td>
-                                <td>Cell 4</td>
-                                <td>Cell 5</td>
-                            </tr>
+                           
                         </tbody>
                     </table>
                 </div>

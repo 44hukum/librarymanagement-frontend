@@ -11,16 +11,15 @@ import logo from '../assets/img/logo.png'
 import content from '../assets/img/unnamed.png'
 import background from '../assets/img/background.png'
 
-function Home() {
+function books() {
 
     return (
         <div className="Home">
       
-            <div data-bss-parallax-bg="true" style={{ height: "500px", background: `url(${background}) center / cover` }}></div>
             <section className="article-list">
                 <div className="container">
                     <div className="intro">
-                        <h2 className="text-center">Recent Books</h2>
+                        <h2 className="text-center">All Books</h2>
                     </div>
                 </div>
                 <div className="container">
@@ -52,23 +51,11 @@ function Home() {
 
                     </div>
                 </div>
-                <section className="contact-clean">
-                    <form method="post">
-                        <h2 className="text-center">Contact us</h2>
-                        <div className="mb-3"><input className="form-control" type="text" name="name" placeholder="Name" /></div>
-                        {/* is-valid is invalid */}
-                            <div className="mb-3"><input className="form-control " type="email" name="email" placeholder="Email" />
-                            {/* <small className="form-text text-danger">Please enter a correct email address.</small> */}
-                            
-                            </div>
-                                <div className="mb-3"><textarea className="form-control" name="message" placeholder="Message" rows="14"></textarea></div>
-                                <div className="mb-3"><button className="btn btn-primary btn-sm" type="submit">send </button></div>
-            </form>
-        </section>
+            
     </section>
                     
    </div>
  )
 }
 
-export default Home;
+export default books;
